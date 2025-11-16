@@ -11,10 +11,9 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-background via-purple-dark to-background">
       {/* Decorative elements */}
-      <div className="absolute inset-0 opacity-20">
+      <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full blur-[100px]" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent rounded-full blur-[120px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan rounded-full blur-[150px] opacity-30" />
       </div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
@@ -24,13 +23,13 @@ const Hero = () => {
             <img 
               src={logo} 
               alt="Rei dos Quadros" 
-              className="w-64 h-auto drop-shadow-[0_0_30px_rgba(236,72,153,0.5)]"
+              className="w-64 h-auto"
             />
           </div>
 
           {/* Black November Badge */}
           <div className="flex justify-center animate-fade-in animation-delay-100">
-            <Badge className="bg-gradient-to-r from-primary to-accent text-foreground px-6 py-2 text-lg font-bold shadow-[0_0_20px_rgba(236,72,153,0.5)] border-0">
+            <Badge className="bg-primary text-foreground px-6 py-2 text-lg font-semibold border-0">
               <Sparkles className="w-5 h-5 mr-2" />
               BLACK NOVEMBER - OFERTA LIMITADA
               <Sparkles className="w-5 h-5 ml-2" />
@@ -38,8 +37,8 @@ const Hero = () => {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl font-black leading-tight animate-fade-in animation-delay-200">
-            <span className="bg-gradient-to-r from-primary via-accent to-cyan bg-clip-text text-transparent drop-shadow-lg">
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight animate-fade-in animation-delay-200">
+            <span className="text-foreground">
               Crie e Venda Quadros
             </span>
             <br />
@@ -47,13 +46,13 @@ const Hero = () => {
               Personalizados Usando
             </span>
             <br />
-            <span className="text-accent drop-shadow-[0_0_15px_rgba(251,191,36,0.5)]">
+            <span className="text-primary">
               Apenas Seu Celular
             </span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-secondary font-medium max-w-3xl mx-auto animate-fade-in animation-delay-300">
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto animate-fade-in animation-delay-300">
             Aprenda o método completo para lucrar de casa criando quadros incríveis, 
             mesmo sem experiência ou habilidade para desenhar
           </p>
@@ -68,9 +67,9 @@ const Hero = () => {
             ].map((benefit, index) => (
               <div 
                 key={index}
-                className="bg-card border border-primary/30 rounded-lg px-4 py-2 shadow-lg hover:shadow-primary/20 transition-all hover:scale-105"
+                className="bg-card border border-border rounded-lg px-4 py-2 transition-all hover:border-primary"
               >
-                <span className="text-foreground font-semibold">{benefit}</span>
+                <span className="text-foreground font-medium">{benefit}</span>
               </div>
             ))}
           </div>
@@ -80,11 +79,11 @@ const Hero = () => {
             <Button 
               onClick={scrollToCTA}
               size="lg"
-              className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-foreground text-xl px-12 py-8 rounded-2xl font-black shadow-[0_0_30px_rgba(236,72,153,0.6)] hover:shadow-[0_0_40px_rgba(236,72,153,0.8)] transition-all transform hover:scale-105 border-2 border-accent/50"
+              className="bg-primary hover:bg-primary/90 text-foreground text-xl px-12 py-8 rounded-xl font-semibold transition-all"
             >
-              <Crown className="mr-3 w-7 h-7" />
+              <Crown className="mr-3 w-6 h-6" />
               GARANTIR VAGA POR R$ 37
-              <Crown className="ml-3 w-7 h-7" />
+              <Crown className="ml-3 w-6 h-6" />
             </Button>
             <p className="text-muted-foreground mt-4 text-sm">
               🔥 Apenas durante a Black November | De R$ 97 por apenas R$ 37
