@@ -2,11 +2,10 @@ version: "3.9"
 
 services:
   reidosquadros:
+    build: .
     image: reidosquadros:latest
     ports:
       - "3000:3000"
-
-
     labels:
       - "traefik.enable=true"
 
