@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import logo from "@/assets/logo-rei-dos-quadros.png";
-import { Sparkles, Crown } from "lucide-react";
+import logo from "@/assets/logo-rei-dos-quadros-sem-fundo.png";
+import { Crown } from "lucide-react";
 
 const Hero = () => {
   const scrollToCTA = () => {
@@ -9,7 +8,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-background via-purple-dark to-background">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-background via-purple-dark to-background pt-16">
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full blur-[100px]" />
@@ -19,21 +18,12 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-5xl mx-auto text-center space-y-8">
           {/* Logo */}
-          <div className="flex justify-center mb-8 animate-fade-in">
+          <div className="flex justify-center mb-12 animate-fade-in">
             <img 
               src={logo} 
               alt="Rei dos Quadros" 
-              className="w-64 h-auto"
+              className="w-80 h-auto"
             />
-          </div>
-
-          {/* Black November Badge */}
-          <div className="flex justify-center animate-fade-in animation-delay-100">
-            <Badge className="bg-primary text-foreground px-6 py-2 text-lg font-semibold border-0">
-              <Sparkles className="w-5 h-5 mr-2" />
-              BLACK NOVEMBER - OFERTA LIMITADA
-              <Sparkles className="w-5 h-5 ml-2" />
-            </Badge>
           </div>
 
           {/* Main Headline */}

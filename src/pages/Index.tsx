@@ -1,3 +1,4 @@
+import TopBanner from "@/components/TopBanner";
 import Hero from "@/components/Hero";
 import PainPoints from "@/components/PainPoints";
 import MethodPresentation from "@/components/MethodPresentation";
@@ -12,6 +13,7 @@ import FinalCTA from "@/components/FinalCTA";
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <TopBanner />
       <Hero />
       <PainPoints />
       <MethodPresentation />
