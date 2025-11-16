@@ -8,53 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 265 55% 8%;
-    --foreground: 0 0% 100%;
+    --background: 220 15% 10%;
+    --foreground: 0 0% 95%;
 
-    --card: 265 45% 12%;
-    --card-foreground: 0 0% 100%;
+    --card: 220 15% 14%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 265 50% 10%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 220 15% 12%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 330 100% 60%;
+    --primary: 260 40% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 270 60% 70%;
-    --secondary-foreground: 265 55% 8%;
+    --secondary: 220 15% 25%;
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 265 35% 20%;
-    --muted-foreground: 270 20% 70%;
+    --muted: 220 15% 20%;
+    --muted-foreground: 220 10% 60%;
 
-    --accent: 45 100% 55%;
-    --accent-foreground: 265 55% 8%;
+    --accent: 40 50% 55%;
+    --accent-foreground: 220 15% 10%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 265 35% 25%;
-    --input: 265 35% 25%;
-    --ring: 330 100% 60%;
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
+    --ring: 260 40% 50%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    --cyan: 190 100% 50%;
-    --cyan-foreground: 265 55% 8%;
+    --cyan: 190 50% 50%;
+    --cyan-foreground: 220 15% 10%;
 
-    --gold: 45 100% 55%;
-    --gold-foreground: 265 55% 8%;
+    --gold: 40 50% 55%;
+    --gold-foreground: 220 15% 10%;
 
-    --purple-deep: 265 55% 8%;
-    --purple-dark: 265 45% 15%;
-    --purple-medium: 265 40% 30%;
+    --purple-deep: 220 15% 10%;
+    --purple-dark: 220 15% 15%;
+    --purple-medium: 220 15% 30%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(330, 100%, 60%), hsl(270, 100%, 50%));
-    --gradient-gold: linear-gradient(135deg, hsl(45, 100%, 55%), hsl(35, 100%, 60%));
-    --gradient-hero: linear-gradient(180deg, hsl(265, 55%, 8%), hsl(265, 45%, 12%));
+    --gradient-primary: linear-gradient(135deg, hsl(260, 40%, 50%), hsl(240, 30%, 40%));
+    --gradient-gold: linear-gradient(135deg, hsl(40, 50%, 55%), hsl(35, 45%, 50%));
+    --gradient-hero: linear-gradient(180deg, hsl(220, 15%, 10%), hsl(220, 15%, 14%));
 
-    --glow-primary: 0 0 20px hsl(330 100% 60% / 0.3);
-    --glow-gold: 0 0 20px hsl(45 100% 55% / 0.3);
-    --glow-cyan: 0 0 15px hsl(190 100% 50% / 0.3);
+    --glow-primary: 0 0 15px hsl(260 40% 50% / 0.15);
+    --glow-gold: 0 0 15px hsl(40 50% 55% / 0.15);
+    --glow-cyan: 0 0 10px hsl(190 50% 50% / 0.15);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
