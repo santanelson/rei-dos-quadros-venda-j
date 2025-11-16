@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  reidosquadros:
+    build: .
+    container_name: reidosquadros
+    restart: always
+
+    labels:
+      - "traefik.enable=true"
+
+      # HTTP → HTTPS redirect
+      - "traefik.http.routers.reidosquadros.rule=Host(`reidosquadros.dout.online`)"
+      - "traefik.http.routers.reidosquadros.entrypoints=web"
+      - "traefik.http.middlewares.reidosquadros-https-redirect.redirectscheme.scheme=https"
+      - "traefik.http.routers.reidosquadros.middlewares=reidosquadros-https-redirect"
+
+      # HTTPS Router
+      - "traefik.http.routers.reidosquadros-secure.rule=Host(`reidosquadros.dout.online`)"
+      - "traefik.http.routers.reidosquadros-secure.entrypoints=websecure"
+      - "traefik.http.routers.reidosquadros-secure.tls=true"
+      - "traefik.http.routers.reidosquadros-secure.tls.certresolver=myresolver"
+
+      # Porta interna, pois o Nginx serve na 80
+      - "traefik.http.services.reidosquadros.loadbalancer.server.port=80"
