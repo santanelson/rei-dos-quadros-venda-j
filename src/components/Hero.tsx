@@ -2,11 +2,6 @@ import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo-rei-dos-quadros-sem-fundo.png";
 import { Crown } from "lucide-react";
 const Hero = () => {
-  const scrollToCTA = () => {
-    document.getElementById("offer")?.scrollIntoView({
-      behavior: "smooth"
-    });
-  };
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-background via-purple-dark to-background pt-16">
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-5">
