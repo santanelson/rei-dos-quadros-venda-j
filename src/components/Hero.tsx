@@ -51,10 +51,12 @@ const Hero = () => {
 
           {/* CTA Button */}
           <div className="pt-8 animate-fade-in animation-delay-500">
-            <Button onClick={scrollToCTA} size="lg" className="bg-primary hover:bg-primary/90 text-foreground text-xl px-12 py-8 rounded-xl font-semibold transition-all">
-              <Crown className="mr-3 w-6 h-6" />
-              GARANTIR VAGA POR R$ 37
-              <Crown className="ml-3 w-6 h-6" />
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-foreground text-xl px-12 py-8 rounded-xl font-semibold transition-all">
+              <a href="https://pay.kiwify.com.br/6XXV6m1" target="_blank" rel="noopener noreferrer">
+                <Crown className="mr-3 w-6 h-6" />
+                GARANTIR VAGA POR R$ 37
+                <Crown className="ml-3 w-6 h-6" />
+              </a>
             </Button>
             <p className="text-muted-foreground mt-4 text-sm">
               🔥 Apenas durante a Black November | De R$ 97 por apenas R$ 37

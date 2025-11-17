@@ -91,12 +91,15 @@ const OfferSection = () => {
             {/* CTA Button */}
             <div className="text-center">
               <Button 
+                asChild
                 size="lg"
                 className="w-full md:w-auto bg-gradient-to-r from-accent via-primary to-accent hover:from-accent/90 hover:via-primary/90 hover:to-accent/90 text-foreground text-2xl md:text-3xl px-12 md:px-20 py-10 rounded-2xl font-black shadow-[0_0_50px_rgba(251,191,36,0.7)] hover:shadow-[0_0_60px_rgba(251,191,36,0.9)] transition-all transform hover:scale-105 border-2 border-accent/50 mb-6"
               >
-                <Crown className="mr-3 w-8 h-8" />
-                GARANTIR MINHA VAGA POR R$ 37
-                <Crown className="ml-3 w-8 h-8" />
+                <a href="https://pay.kiwify.com.br/6XXV6m1" target="_blank" rel="noopener noreferrer">
+                  <Crown className="mr-3 w-8 h-8" />
+                  GARANTIR MINHA VAGA POR R$ 37
+                  <Crown className="ml-3 w-8 h-8" />
+                </a>
               </Button>
               <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
