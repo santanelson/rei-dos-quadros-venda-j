@@ -61,12 +61,15 @@ const FinalCTA = () => {
           {/* Final CTA Button */}
           <div className="mb-8">
             <Button 
+              asChild
               size="lg"
               className="bg-primary hover:bg-primary/90 text-foreground text-2xl md:text-3xl px-12 md:px-20 py-10 rounded-xl font-semibold transition-all"
             >
-              <Crown className="mr-3 w-7 h-7" />
-              SIM, QUERO COMEÇAR AGORA
-              <ArrowRight className="ml-3 w-7 h-7" />
+              <a href="https://pay.kiwify.com.br/6XXV6m1" target="_blank" rel="noopener noreferrer">
+                <Crown className="mr-3 w-7 h-7" />
+                SIM, QUERO COMEÇAR AGORA
+                <ArrowRight className="ml-3 w-7 h-7" />
+              </a>
             </Button>
           </div>
 

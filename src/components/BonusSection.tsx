@@ -1,5 +1,6 @@
 import { Gift, Sparkles, ImageIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import packArtes from "@/assets/pack-artes.png";
 
 const BonusSection = () => {
   const scrollToCTA = () => {
@@ -36,9 +37,11 @@ const BonusSection = () => {
           <div className="bg-gradient-to-br from-card via-purple-dark to-card border-4 border-accent rounded-3xl p-10 md:p-14 shadow-[0_0_50px_rgba(251,191,36,0.3)] mb-8">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="flex-shrink-0">
-                <div className="w-32 h-32 bg-gradient-to-br from-accent to-primary rounded-3xl flex items-center justify-center shadow-[0_0_40px_rgba(251,191,36,0.4)] animate-pulse">
-                  <ImageIcon className="w-16 h-16 text-foreground" />
-                </div>
+                <img 
+                  src={packArtes} 
+                  alt="Pack de 1500 Artes para Quadros" 
+                  className="w-64 h-auto rounded-2xl shadow-2xl"
+                />
               </div>
               <div className="flex-1 text-center md:text-left">
                 <h3 className="text-3xl md:text-4xl font-black text-foreground mb-4">
@@ -95,11 +98,13 @@ const BonusSection = () => {
           {/* CTA */}
           <div className="text-center">
             <Button 
-              onClick={scrollToCTA}
+              asChild
               size="lg"
               className="bg-gradient-to-r from-accent to-primary hover:from-accent/90 hover:to-primary/90 text-foreground text-2xl px-16 py-8 rounded-2xl font-black shadow-[0_0_40px_rgba(251,191,36,0.6)] hover:shadow-[0_0_50px_rgba(251,191,36,0.8)] transition-all transform hover:scale-105"
             >
-              QUERO AS 1500 ARTES AGORA
+              <a href="https://pay.kiwify.com.br/6XXV6m1" target="_blank" rel="noopener noreferrer">
+                QUERO AS 1500 ARTES AGORA
+              </a>
             </Button>
             <p className="text-muted-foreground mt-4">
               + Método completo + Suporte + Garantia de 7 dias
